@@ -1,0 +1,19 @@
+body {
+   background: #099;
+ }
+
+ h1 {
+   background-color: red;
+ }
+
+ nav {
+   display: flex;
+   background-color: aValueChosenByYou;
+ }
+
+ nav a {
+   background-color: aValueChosenByYou;
+   color: aValueChosenByYou;
+   padding: aValueChosenByYou;
+   margin: aValueChosenByYou;
+ }
