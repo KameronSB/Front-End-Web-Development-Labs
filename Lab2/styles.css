@@ -3,17 +3,27 @@ body {
  }
 
  h1 {
-   background-color: red;
  }
 
  nav {
    display: flex;
-   background-color: aValueChosenByYou;
+   background-color: purple;
  }
 
  nav a {
-   background-color: aValueChosenByYou;
-   color: aValueChosenByYou;
-   padding: aValueChosenByYou;
-   margin: aValueChosenByYou;
+   background-color: grey;
+   color: orange;
+   padding: 10px;
+   margin: 10px;
+
+   transition: background-color 0.3s;
  }
+
+ nav a:hover {
+  background-color: white;
+}
+
+header, main {
+  background-color: silver;
+  overflow: auto;
+}
