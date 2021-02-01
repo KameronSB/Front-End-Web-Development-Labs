@@ -1,0 +1,15 @@
+nav {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.9em;
+}
+
+nav a {
+  padding: 1em;
+
+}
+
+nav a:last-child {
+  background-color: blue;
+  color: white;
+}
