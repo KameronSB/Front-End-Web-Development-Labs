@@ -1,0 +1,49 @@
+body {
+  background-color: #c333
+}
+
+
+
+nav {
+  opacity: 0;
+  transform: translateX(100px);
+  display: none;
+  flex-direction: column;
+  transition: 1.5s;
+}
+
+nav a {
+  background-color: grey;
+  color: orange;
+  padding: 10px;
+  margin: 10px;
+
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+ background-color: white;
+}
+
+nav.open {
+  opacity: 1;
+  display: flex;
+}
+
+
+#menuToggler {
+}
+
+@media screen and (min-width: 500px) {
+
+  #menuToggler {
+    display: none;
+  }
+
+  nav {
+    opacity: 1;
+    display: flex;
+    flex-direction: row;
+  }
+
+}
