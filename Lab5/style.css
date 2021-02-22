@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+body {
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+}
+
+.relative {
+  position: relative;
+}
+
+:root {
+  --height: 50%;
+  --bg-colour: #ffffff;
+  --fg-colour: #000000;
+}
+
+#heightTarget {
+  position: absolute;
+  bottom: 0;
+  right: 1em;
+  width: 4em;
+  background-color: hsl(0, 70%, 40%);
+  height: var(--height);
+  transition: 0.4s;
+}
+
+form {
+ display: grid;
+ grid-row-gap: 0.25em;
+ grid-column-gap: 1em;
+ grid-template-columns: minmax(max-content, 1fr) 3fr;
+}
+
+form h2 {
+ grid-column: 1 / 3;
+}
+form input[type="submit"] {
+ grid-column: 2 / 3;
+ justify-self: end;
+}
+
+form input:invalid {
+ border-width: 0.5px 0.5px 0.5px 3px;
+ border-left-style: solid;
+ border-left-color: red;
+}
+form input:valid {
+ border-width: 0.5px 0.5px 0.5px 3px;
+ border-left-style: solid;
+ border-left-color: green;
+}
+form:invalid {
+ border-top: 3px solid red;
+}
+form:valid {
+ border-top: 3px solid green;
+}
+
+
+header {
+  padding: 0.5em 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(0, 70%, 40%);
+  color: hsl(0, 70%, 80%);
+}
+
+#search {
+  order: 1;
+}
+
+#colours {
+  background-color: var(--bg-colour);
+  color: var(--fg-colour);
+}
+
+main section {
+  padding: 1em;
+  border-bottom: 0.5px dotted hsl(0, 70%, 80%);
+}
+
+@media screen and (min-width: 420px) {
+  header {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  header, main section {
+		padding: 1em 25vw;
+	}
+}
+
+input:invalid {
+  background-color: hsl(0, 70%, 70%);
+  border-color: hsl(0, 100%, 70%)
+}
