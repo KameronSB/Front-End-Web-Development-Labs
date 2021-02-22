@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Lab-05</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <section id="search">
+      <input placeholder="&#128269; search" id="myQuery" aria-label="search">
+      <button id="searchButton">search</button>
+    </section>
+    <h1>User Input</h1>
+  </header>
+  <main>
+    <section>
+      <h2>Basic input</h2>
+      <label for="myName">Enter your name</label>
+      <input id="myName">
+    </section>
+
+  </main>
+
+  <input value="default value">
+  <input type="color" value="#ff0000">
+  <input type="date" value="2021-01-01">
+  <input type="search" value="">
+
+  <section>
+    <h2>Numbers</h2>
+    <label for="myAge">Enter your age: </label>
+    <input id="myAge" type="number" max="150" min="18">
+  </section>
+
+  <section class="relative">
+    <h2>Ranges</h2>
+    <label for="myHeight">Element height: </label>
+    <input id="myHeight" type="range" value="50">
+    <div id="heightTarget"></div>
+  </section>
+
+  <section id="colours">
+    <h2>Colours</h2>
+    <label for="myBG">Background: </label>
+    <input id="myBG" type="color" value="#ffffff"><br>
+    <label for="myFG">Foreground: </label>
+    <input id="myFG" type="color" value="#000000">
+  </section>
+
+  <section>
+  <form id="login">
+    <h2>Sign in</h2>
+    <label for="myUser">Username: </label>
+    <input id="myUser" name="username" placeholder="enter your username" required>
+    <label for="myPassword">Password: </label>
+    <input id="myPassword" type="password" name="password" placeholder="enter your password" minlength="8" required>
+    <label for="myConfirmation">Confirm password: </label>
+    <input id="myConfirmation" type="password" placeholder="confirm password" required>
+    <input type="submit" value="login">
+  </form>
+</section>
+
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
