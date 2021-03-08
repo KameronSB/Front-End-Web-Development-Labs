@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+:root {
+	--hue: 20;
+	--dark: hsl(var(--hue), 80%, 50%);
+	--light: hsl(var(--hue), 80%, 90%);
+}
+
+body {
+	font-family: Nunito, sans-serif;
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+header, section, footer {
+	background-color: var(--dark);
+	color: var(--light);
+	overflow: auto;
+	padding: 0.5rem;
+}
+
+h1 {
+	margin: 0;
+}
+
+section {
+	display: flex;
+	justify-content: space-between;
+}
+
+input, button {
+	font-size: 1em;
+}
+
+button {
+	border: 1px solid var(--light);
+	background-color: var(--dark);
+	color: var(--light);
+}
+
+ul {
+	list-style: none;
+	user-select: none;
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	padding: 1em 0.5rem;
+	margin: 0;
+	border: 0px solid var(--dark);
+	display: flex;
+	justify-content: space-between;
+}
+
+li:nth-child(odd) {
+	background-color: var(--light);
+	border-width: 0.5px 0;
+}
+
+label {
+	flex-grow: 1;
+}
+
+input[type="checkbox"] {
+	display: none;
+}
+
+input:checked + label {
+	text-decoration: line-through;
+}
